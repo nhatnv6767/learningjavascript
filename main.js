@@ -1,1 +1,1 @@
-console.warn('Thong bao')
+confirm('Xac nhan ban du tuoi');
