@@ -1,1 +1,3 @@
-alert("Hi javascript basic!")
+var fullName = 'Nguyen Nut Nut';
+
+alert(fullName)
