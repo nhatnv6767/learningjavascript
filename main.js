@@ -1,4 +1,4 @@
-setTimeout(function() {
+setInterval(function() {
     alert('Thong bao')
-}, 1000);
-// Chay doan code nay sau khoang thoi gian bao nhieu lau (1s)
+},1000);
+// thuc thi lien tuc sau 1 khoang thoi gian nhat dinh 
