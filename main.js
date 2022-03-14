@@ -3,6 +3,7 @@
 
 var myString = "    Hoc JS tai JS JS FF!";
 
-// Trim trim() - xoa cac khoang trang thua trai va phai
+// Split 
 
-console.log(myString.trim())
+var languages = 'Javascript, PHP, Ruby';
+console.log(languages.split(', '))
