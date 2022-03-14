@@ -1,8 +1,12 @@
-// Lam viec voi so
+// Array
 
 
+var languages = [
+    'Not',
+    'To',
+    'Be',
+    'Javascript',
+    'PHP'
+]
 
-var age = 18;
-var PI = 3000.56456446;
-
-console.log(PI.toFixed(2))
+console.log(Array.isArray(languages))
