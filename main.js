@@ -1,10 +1,7 @@
-// Toán tử ++ -- 
-// Tiền tố và hậu tố - Prefix & Postfix 
+// Lam viec voi chuoi
 
-// Template string ES6 template
 
-var firstName = "Bi"
-var lastName = "None"
+var myString = "Hoc JS tai JS JS FF";
 
-console.log(`Toi la: ${firstName} ${lastName}`)
-
+// Tim index cua JS bat dau tu index thu 6
+console.log(myString.indexOf("JS", 6))
