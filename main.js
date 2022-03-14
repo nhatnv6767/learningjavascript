@@ -3,6 +3,6 @@
 
 var myString = "Hoc JS tai JS JS FF";
 
-// Cut string , gia tri bat dau va gia tri ket thuc - index
+// Cut string , cat tu gia tri do' den het chuoi~
 
-console.log(myString.slice(4, 6));
+console.log(myString.slice(4));
