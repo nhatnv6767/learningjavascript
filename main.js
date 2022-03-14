@@ -1,9 +1,10 @@
-// Lam viec voi chuoi
+// Lam viec voi so
 
 
-var myString = "    Hoc JS tai JS JS FF!";
 
-// charAt
+var age = 18;
+var PI = 3.14;
 
-const myString2 = 'Bi None';
-console.log(myString2.charAt(0))
+var result = 20 / 'ABC';
+
+console.log(isNaN(result))
