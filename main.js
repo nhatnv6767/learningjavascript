@@ -1,8 +1,8 @@
 // Lam viec voi chuoi
 
 
-var myString = "Hoc JS tai JS JS FF";
+var myString = "Hoc JS tai JS JS FF!";
 
-// Cut string , cat tu gia tri do' den het chuoi~
+// Cut string , cat tu phai sang trai
 
-console.log(myString.slice(4));
+console.log(myString.slice(-3, -1));
