@@ -1,8 +1,8 @@
 // Lam viec voi chuoi
 
 
-var myString = "Hoc JS tai JS JS FF!";
+var myString = "    Hoc JS tai JS JS FF!";
 
-// Replace, /JS/g dung de tim tat ca de thay the tat ca
+// Trim trim() - xoa cac khoang trang thua trai va phai
 
-console.log(myString.replace(/JS/g, "Javascript"));
+console.log(myString.trim())
