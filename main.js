@@ -3,8 +3,6 @@
 
 
 var age = 18;
-var PI = 3.14;
+var PI = 3000.56456446;
 
-var result = 20 / 'ABC';
-
-console.log(isNaN(result))
+console.log(PI.toFixed)
