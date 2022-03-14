@@ -3,5 +3,6 @@
 
 var myString = "Hoc JS tai JS JS FF";
 
-// Tim index cua JS tai vi tri cuoi cung trong chuoi
-console.log(myString.lastIndexOf("JS"))
+// Cut string , gia tri bat dau va gia tri ket thuc - index
+
+console.log(myString.slice(4, 6));
