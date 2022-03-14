@@ -1,11 +1,10 @@
 // Toán tử ++ -- 
 // Tiền tố và hậu tố - Prefix & Postfix 
 
-var number = 6
+// Template string ES6 template
 
-var output = number++ + --number;
+var firstName = "Bi"
+var lastName = "None"
 
-// 6 + 6
-
-console.log(output);
+console.log(`Toi la: ${firstName} ${lastName}`)
 
