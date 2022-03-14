@@ -3,6 +3,6 @@
 
 var myString = "Hoc JS tai JS JS FF!";
 
-// Replace
+// Replace, /JS/g dung de tim tat ca de thay the tat ca
 
-console.log(myString.replace('JS', "Javascript"));
+console.log(myString.replace(/JS/g, "Javascript"));
