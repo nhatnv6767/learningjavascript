@@ -3,7 +3,7 @@
 
 var myString = "    Hoc JS tai JS JS FF!";
 
-// Split 
+// charAt
 
-var languages = 'Javascript';
-console.log(languages.split(''))
+const myString2 = 'Bi None';
+console.log(myString2.charAt(0))
