@@ -9,4 +9,4 @@ var languages = [
     'PHP'
 ]
 
-console.log(Array.isArray(languages))
+console.log(languages.toString())
