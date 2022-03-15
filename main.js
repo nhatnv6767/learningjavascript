@@ -9,4 +9,4 @@ var languages = [
     'PHP'
 ]
 
-console.log(languages.join())
+console.log(languages.join(' - '))
