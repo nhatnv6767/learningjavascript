@@ -11,4 +11,4 @@ var myInfo = {
 myInfo['my-email'] = 'abc@gmail.com'
 ///
 
-console.log(myInfo)
+console.log(myInfo['address'])
