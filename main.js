@@ -1,13 +1,10 @@
-// Polyfill
+// Object
 
-if (!String.prototype.includes) {
-    String.prototype.includes = function(search, start) {
-        'use strict';
 
-        if (search instanceof RegExp) {
-            throw TypeError('first argument must not be a RegExp'); 
-        }
-        if (start === undefined) { start = 0; }
-        return this.indexOf(search, start) !== -1;
-    }
-}
+var myInfo = {
+    name: 'Bi None',
+    age: 18,
+    address: 'Ha Noi, Viet Nam'
+};
+
+console.log(myInfo)
