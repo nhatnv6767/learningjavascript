@@ -1,7 +1,7 @@
 // Function
 
-function writeLog(message) { // Tham so
-    console.log(message)
+function writeLog() {
+    console.log(arguments)
 }
 
-writeLog('Test message') // đối số
+writeLog('Log 1', 'Log 2')
