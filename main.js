@@ -13,4 +13,4 @@ var myInfo = {
 };
 
 
-console.log(myInfo.getName);
+console.log(myInfo.getName());
