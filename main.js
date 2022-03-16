@@ -1,11 +1,11 @@
-// Function
+// Return
 
-function writeLog() {
-    var myString = '';
-    for (var param of arguments) {
-        myString += `${param} - `
-    }
-    console.log(myString)
+// Declaration function
+function showMessage() {
+
 }
 
-writeLog('Log 1', 'Log 2', 'Log 3')
+// Expression function
+var showMessage2 = function() {
+
+}
