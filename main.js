@@ -9,9 +9,4 @@ var languages = [
     'PHP'
 ]
 
-var languages2 = [
-    'Dart',
-    'Ruby'
-]
-
-console.log(languages.concat(languages2)) // thành 1 array mới là hợp nhất của 2 array trên
+console.log(languages.slice(1, 2)) // chọn vị trí bắt đầu và cắt đến vị trí thứ 2 thì ngừng lại
