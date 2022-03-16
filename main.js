@@ -9,7 +9,7 @@ var languages = [
     'PHP'
 ]
 
-console.log(languages.unshift('Dau mang')) // thêm 1 hoặc nhiều phần tử vào đầu mảng, trả về số 
-// phần tử của mảng 
+languages.splice(1, 1)// tham số thứ nhất là vị trí con trỏ
+// tham số thứ 2 là từ vị trí con trỏ xoá đi mấy phần tử
 
 console.log(languages)
