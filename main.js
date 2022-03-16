@@ -6,9 +6,11 @@ var myInfo = {
     name: 'Bi None',
     age: 18,
     address: 'Ha Noi, Viet Nam',
-    [emailKey]: 'abc@gmail.com'
+    [emailKey]: 'abc@gmail.com',
+    getName: function() {
+        return this.name; // this - > myInfo
+    }
 };
 
-delete myInfo.age
 
-console.log(myInfo);
+console.log(myInfo.getName);
