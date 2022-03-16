@@ -1,7 +1,7 @@
 // Function
 
-function showDialog() {
-    alert('Hi xin chao cac ban');
+function writeLog(message) {
+    console.log(message)
 }
 
-showDialog()
+writeLog('Test message')
