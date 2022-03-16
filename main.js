@@ -12,5 +12,7 @@ var myInfo = {
     }
 };
 
+// key của object trong trường hợp là 1 function thì đc gọi là phương thức (method)
+// Other -> gọi là thuộc tính - property
 
 console.log(myInfo.getName());
