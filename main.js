@@ -1,9 +1,11 @@
 // Function
 
 function writeLog() {
+    var myString = '';
     for (var param of arguments) {
-        console.log(param)
+        myString += `${param} - `
     }
+    console.log(myString)
 }
 
 writeLog('Log 1', 'Log 2', 'Log 3')
