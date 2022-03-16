@@ -7,8 +7,6 @@ var myInfo = {
     address: 'Ha Noi, Viet Nam'
 };
 
-// myInfo.email = 'abc@gmail.com'
-myInfo['my-email'] = 'abc@gmail.com'
-///
+var myKey = 'address'
 
-console.log(myInfo['address'])
+console.log(myInfo[myKey]);
