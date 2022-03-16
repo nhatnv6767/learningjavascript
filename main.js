@@ -9,5 +9,6 @@ var myInfo = {
     [emailKey]: 'abc@gmail.com'
 };
 
+delete myInfo.age
 
 console.log(myInfo);
