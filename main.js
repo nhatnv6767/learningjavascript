@@ -1,7 +1,7 @@
 // Function
 
-function writeLog(message) {
+function writeLog(message) { // Tham so
     console.log(message)
 }
 
-writeLog('Test message')
+writeLog('Test message') // đối số
