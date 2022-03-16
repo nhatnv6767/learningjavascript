@@ -9,9 +9,9 @@ var languages = [
     'PHP'
 ]
 
-languages.splice(1, 1, 'Xoa di va chen vao', 'Chen pt thu 2')// tham số thứ nhất là vị trí con trỏ
-// tham số thứ 2 là từ vị trí con trỏ xoá đi mấy phần tử
-// trường hợp xoá 0 phần tử nghĩa là chèn, thì có thêm 1 đối số mới 
-// là giá trị muốn chèn vào
+var languages2 = [
+    'Dart',
+    'Ruby'
+]
 
-console.log(languages)
+console.log(languages.concat(languages2)) // thành 1 array mới là hợp nhất của 2 array trên
