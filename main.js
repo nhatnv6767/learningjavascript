@@ -11,5 +11,8 @@ var author = new User('None', 'Bi', 'Avatar');
 var user = new User('David', 'Kally', 'Avatar');
 // => author va user moi la đối tượng
 
-console.log(author.constructor);// gọi lại chính bản thiết kế
+author.title = 'Chia sẻ dạo tại FF'
+user.comment = 'Cho vay 5 chiệu'
+
+console.log(author);
 console.log(user);
