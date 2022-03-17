@@ -23,4 +23,4 @@ var user = new User('Bi', 'None', 'Avatar 1')
 var user2 = new User('Nguyen', 'Vu', 'Avatar 2')
 
 console.log(user.className) // => undefined
-console.log(user2)
+console.log(user2.getClassName())
