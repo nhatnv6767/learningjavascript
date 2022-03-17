@@ -13,3 +13,11 @@ function User(firstName, lastName, avatar) {
         return `${this.firstName} ${this.lastName}`// => this ở đây là this của getName
     }
 }
+
+User.className = 'FF'
+
+var user = new User('Bi', 'None', 'Avatar 1')
+var user2 = new User('Nguyen', 'Vu', 'Avatar 2')
+
+console.log(user.className) // => undefined
+console.log(user2)
