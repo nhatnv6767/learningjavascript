@@ -15,6 +15,9 @@ function User(firstName, lastName, avatar) {
 }
 
 User.prototype.className = 'FF'
+User.prototype.getClassName = function() {
+    return this.className;
+}
 
 var user = new User('Bi', 'None', 'Avatar 1')
 var user2 = new User('Nguyen', 'Vu', 'Avatar 2')
