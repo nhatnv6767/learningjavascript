@@ -19,5 +19,5 @@ var user = new User('David', 'Kally', 'Avatar');
 author.title = 'Chia sẻ dạo tại FF'
 user.comment = 'Cho vay 5 chiệu'
 
-console.log(author.getName());
-console.log(user.getName());
+console.log(author.getName()); // this lúc này của author
+console.log(user.getName()); // this lúc này sẽ là của user
