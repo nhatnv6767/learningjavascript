@@ -6,4 +6,6 @@ var myInfo = {
     age: 18
 }
 
-console.log(Object.keys(myInfo));
+for (var value of Object.keys(myInfo)) {
+    console.log(myInfo[value])
+}
