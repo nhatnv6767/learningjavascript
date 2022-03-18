@@ -1,6 +1,9 @@
-// Date
+// For/of loop
 
 
-var date = Date();
+var myInfo = {
+    name: 'Dang Phg',
+    age: 18
+}
 
-console.log(typeof date) // string
+console.log(Object.keys(myInfo));
