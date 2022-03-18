@@ -1,9 +1,16 @@
-// For/of loop
+// do/while loop
 
 
-var myInfo = {
-    name: 'Dang Phg',
-    age: 18
-}
+var i = 0;
+var isSuccess = false;
 
-console.log(Object.values(myInfo));
+do {
+    i++;
+
+    console.log('Nạp thẻ lần ' + i)
+
+    // Thất bại
+    if (false) {
+        isSuccess = true;
+    }
+} while (!isSuccess && i <= 3) ;
