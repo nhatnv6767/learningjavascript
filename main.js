@@ -1,6 +1,6 @@
 // Date
 
 
-var date = new Date();
+var date = Date();
 
-console.log(date) // object
+console.log(typeof date) // string
