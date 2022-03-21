@@ -43,12 +43,13 @@ var courses = [
 // map() - sử dụng khi muốn thay đổi, chỉnh sửa element của array
 // tạo ra 1 mảng mới có số lượng phần tử bằng với số lượng phần tử mảng cũ
 
-function courseHandler(course) {
+function courseHandler(course, index) {
     return {
         id: course.id,
         name: `Khoa hoc: ${course.name}`,
         coin: course.coin,
-        coinText: `Gia: ${course.coin}`
+        coinText: `Gia: ${course.coin}`,
+        index: index
     }
 }
 
