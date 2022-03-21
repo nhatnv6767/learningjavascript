@@ -50,7 +50,7 @@ function courseHandler(course, index, originArray) {
         coin: course.coin,
         coinText: `Gia: ${course.coin}`,
         index: index,
-        originArray: originArray
+        originArray: originArray[index]
     }
 }
 
