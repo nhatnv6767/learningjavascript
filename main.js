@@ -35,10 +35,10 @@ var courses = [
     },
 ];
 
-// find()
+// find() - chỉ tìm ra đc 1 kết quả đầu tiên
 
 var course = courses.find(function (course, index) {
-    return course.name === 'Ruby';
+    return course.name === 'Ruby1';
 });
 
 console.log(course);
