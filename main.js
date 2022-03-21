@@ -44,17 +44,11 @@ var courses = [
 // tạo ra 1 mảng mới có số lượng phần tử bằng với số lượng phần tử mảng cũ
 
 function courseHandler(course, index) {
-    return {
-        id: course.id,
-        name: `Khoa hoc: ${course.name}`,
-        coin: course.coin,
-        coinText: `Gia: ${course.coin}`,
-        index: index,
-        originArray: courses[index]
-    }
+    return `<h2>${course.name}</h2>`
 }
 
 var newCourses = courses.map(courseHandler);
 
-console.log(newCourses); // trên courseHandler function trả về cái gì thì cái map sẽ hứng những
+console.log(newCourses.join('')); // nối chuỗi đê tạo ra 1 string - thẻ HTML
+// trên courseHandler function trả về cái gì thì cái map sẽ hứng những
 // cái đó
