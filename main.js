@@ -48,3 +48,6 @@ function courseHandler(course) {
 }
 
 var newCourses = courses.map(courseHandler);
+
+console.log(newCourses); // trên courseHandler function trả về cái gì thì cái map sẽ hứng những
+// cái đó
