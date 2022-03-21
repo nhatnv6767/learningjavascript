@@ -40,10 +40,9 @@ var courses = [
     },
 ];
 
-// filter() - giống với find nhưng sẽ trả về tất cả phần tử thoả mãn
+// map() - sử dụng khi muốn thay đổi, chỉnh sửa element của array
+// tạo ra 1 mảng mới có số lượng phần tử bằng với số lượng phần tử mảng cũ
 
-var listCourses = courses.filter(function (course, index) {
-    return course.name === 'Ruby';
-});
+var newCourses = courses.map(function (course) {
 
-console.log(listCourses);
+})
