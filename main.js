@@ -1,16 +1,14 @@
-// do/while loop
+// nested loop
 
 
-var i = 0;
-var isSuccess = false;
+var myArray = [
+    [1, 2],
+    [3, 4],
+    [5, 6],
+];
 
-do {
-    i++;
-
-    console.log('Nạp thẻ lần ' + i)
-
-    // Thất bại
-    if (false) {
-        isSuccess = true;
+for (var i = 0; i < myArray.length; i++) {
+    for (var j = 0; j < myArray[i].length; j++) {
+        console.log(myArray[i][j])
     }
-} while (!isSuccess && i <= 3) ;
+}
