@@ -36,8 +36,11 @@ var courses = [
 ];
 
 // every - Tất cả các phần tử của mảng phải thoả mãn 1 điều kiện gì đó
-// -> Boolean  
+// -> Boolean  // chỉ cần 1 phần tử trong mảng ko thoả mãn điều kiện sẽ ngừng xét những 
+// phần tử còn lại
 
 var isFree = courses.every(function (course, index) {
     return course.coin === 0;
 });
+
+console.log(isFree);
