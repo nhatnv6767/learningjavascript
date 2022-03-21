@@ -36,6 +36,6 @@ var courses = [
 ];
 
 // callback - truyền 1 hàm qua tham số
-courses.forEach(function(course) {
-    console.log(course);
+courses.forEach(function(course, index) {
+    console.log(index, course);
 });
