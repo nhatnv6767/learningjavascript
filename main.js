@@ -44,7 +44,12 @@ var courses = [
 // tạo ra 1 mảng mới có số lượng phần tử bằng với số lượng phần tử mảng cũ
 
 function courseHandler(course) {
-    console.log(course);
+    return {
+        id: course.id,
+        name: `Khoa hoc: ${course.name}`,
+        coin: course.coin,
+        coinText: `Gia: ${course.coin}`
+    }
 }
 
 var newCourses = courses.map(courseHandler);
