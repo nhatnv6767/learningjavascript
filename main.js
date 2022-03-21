@@ -35,7 +35,9 @@ var courses = [
     },
 ];
 
-// callback - truyền 1 hàm qua tham số
-courses.forEach(function(course, index) {
-    console.log(index, course);
+// every - Tất cả các phần tử của mảng phải thoả mãn 1 điều kiện gì đó
+// -> Boolean  
+
+var isFree = courses.every(function (course, index) {
+    return course.coin === 0;
 });
