@@ -35,11 +35,10 @@ var courses = [
     },
 ];
 
-// some() chỉ cần 1 ông trong mảng thoả mãn điều kiện thì trả về
-// dừng việc kiểm tra lại khi gặp kết quả đúng
+// find()
 
-var isFree = courses.some(function (course, index) {
-    return course.coin === 0;
+var course = courses.find(function (course, index) {
+    return course.name === 'Ruby';
 });
 
-console.log(isFree);
+console.log(course);
