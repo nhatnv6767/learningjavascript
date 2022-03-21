@@ -34,3 +34,8 @@ var courses = [
         coin: 500
     },
 ];
+
+// callback - truyền 1 hàm qua tham số
+courses.forEach(function(course) {
+    console.log(course);
+});
