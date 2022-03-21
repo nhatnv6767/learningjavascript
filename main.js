@@ -43,8 +43,8 @@ var courses = [
 // map() - sử dụng khi muốn thay đổi, chỉnh sửa element của array
 // tạo ra 1 mảng mới có số lượng phần tử bằng với số lượng phần tử mảng cũ
 
-var courseHandler = function() {
-    
+function courseHandler(course) {
+    console.log(course);
 }
 
 var newCourses = courses.map(courseHandler);
