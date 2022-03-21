@@ -33,12 +33,17 @@ var courses = [
         name: 'ReactJS',
         coin: 500
     },
+    {
+        id: 6,
+        name: 'Ruby',
+        coin: 10
+    },
 ];
 
-// find() - chỉ tìm ra đc 1 kết quả đầu tiên
+// filter() - giống với find nhưng sẽ trả về tất cả phần tử thoả mãn
 
-var course = courses.find(function (course, index) {
-    return course.name === 'Ruby1';
+var listCourses = courses.filter(function (course, index) {
+    return course.name === 'Ruby';
 });
 
-console.log(course);
+console.log(listCourses);
