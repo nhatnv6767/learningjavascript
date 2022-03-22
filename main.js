@@ -50,7 +50,10 @@ var courses = [
 var i = 0; // kiểm tra xem reduce có gọi lại coinHandler ko
 function coinHandler(accumulator, currentValue, currentIndex, originArray) {
     i++;
-    console.log(i)
+    console.table({
+        'Lượt chạy: ': i,
+        'Biến tích trữ: ': accumulator
+    })
 }
 
 // có 2 đối số
