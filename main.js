@@ -40,15 +40,18 @@ var courses = [
     },
 ];
 
-// map() - sử dụng khi muốn thay đổi, chỉnh sửa element của array
-// tạo ra 1 mảng mới có số lượng phần tử bằng với số lượng phần tử mảng cũ
+// reduce -- khi muốn nhận về 1 giá trị duy nhất sau khi tính toán xử lý trên các phần tử 
+// của array
 
-function courseHandler(course, index) {
-    return `<h2>${course.name}</h2>`
+// Biến lưu trữ
+// Thực hiện việc lưu trữ
+// accumulator: Biến lưu trữ
+
+var i = 0; // kiểm tra xem reduce có gọi lại coinHandler ko
+function coinHandler(accumulator, currentValue, currentIndex, originArray) {
+    i++;
+    console.log(i)
 }
 
-var newCourses = courses.map(courseHandler);
-
-console.log(newCourses.join('')); // nối chuỗi đê tạo ra 1 string - thẻ HTML
-// trên courseHandler function trả về cái gì thì cái map sẽ hứng những
-// cái đó
+// có 2 đối số
+var totalCoin = courses.reduce(coinHandler, 0);
