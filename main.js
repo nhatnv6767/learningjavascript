@@ -1,4 +1,6 @@
 // includes method
 
 
-console.log(Array.prototype.includes)
+var title = 'Responsive web design';
+
+console.log(title.includes('web'))
