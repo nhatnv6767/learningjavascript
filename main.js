@@ -47,11 +47,11 @@ var courses = [
 // Thực hiện việc lưu trữ
 // accumulator: Biến lưu trữ
 
-function coinHandler(accumulator, currentValue) {
-    return accumulator + currentValue.coin
-}
+
 
 // có 2 đối số
-var totalCoin = courses.reduce(coinHandler, 0);
+var totalCoin = courses.reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue.coin
+}, 0);
 
 console.log(totalCoin)
