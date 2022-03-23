@@ -40,16 +40,11 @@ var courses = [
     },
 ];
 
-// reduce -- khi muốn nhận về 1 giá trị duy nhất sau khi tính toán xử lý trên các phần tử 
-// của array
-
-// Biến lưu trữ
-// Thực hiện việc lưu trữ
-// accumulator: Biến lưu trữ
+// reduce 
 
 
+var totalCoin = courses.reduce(function(total, course) {
+    return total + course.coin;
+}, 0)
 
-// có 2 đối số
-var totalCoin = courses.reduce( (a, b) => a + b.coin , 0);
-
-console.log(totalCoin)
+console.log(totalCoin);
