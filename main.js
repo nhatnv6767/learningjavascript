@@ -81,4 +81,15 @@ var newCourses = topics.reduce(function (courses, topic) {
     return courses.concat(topic.courses)
 }, [])
 
-console.log(newCourses)
+// console.log(newCourses)
+
+var htmls = newCourses.map(function (course) {
+    return `
+        <div>
+            <h2>${course.title}</h2>
+            <p>ID: ${course.id}</p>
+        </div>
+    `
+})
+
+console.log(htmls.join(''))
