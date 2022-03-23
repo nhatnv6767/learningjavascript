@@ -44,10 +44,11 @@ var courses = [
 
 // ví dụ khi ko dùng initialValue
 
-var numbers = [100, 200, 220, 200, 480];
+// Flat - "Làm phẳng" mảng từ Depth array - "Mảng sâu"
+var depthArray = [1, 2, [3, 4], 5, 6, [7, 8, 9]];
 
-var totalCoin = numbers.reduce(function(total, number) {
-    return total + number;
-})
+var flatArray = depthArray.reduce(function (flatOutput, depthItem) {
+    return flatOutput.concat(depthItem)
+}, [])
 
-console.log(totalCoin)
+console.log(flatArray)
