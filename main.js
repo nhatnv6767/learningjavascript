@@ -42,9 +42,12 @@ var courses = [
 
 // reduce 
 
+// ví dụ khi ko dùng initialValue
 
-var totalCoin = courses.reduce(function(total, course) {
-    return total + course.coin;
-}, 0)
+var numbers = [100, 200, 220, 200, 480];
 
-console.log(totalCoin);
+var totalCoin = numbers.reduce(function(total, number) {
+    return total + number;
+})
+
+console.log(totalCoin)
