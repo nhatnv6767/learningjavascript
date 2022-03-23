@@ -54,6 +54,8 @@ function coinHandler(accumulator, currentValue, currentIndex, originArray) {
         'Lượt chạy: ': i,
         'Biến tích trữ: ': accumulator
     })
+
+    console.log(currentValue)
     return 100;
 }
 
