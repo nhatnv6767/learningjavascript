@@ -54,6 +54,7 @@ function coinHandler(accumulator, currentValue, currentIndex, originArray) {
         'Lượt chạy: ': i,
         'Biến tích trữ: ': accumulator
     })
+    return 100;
 }
 
 // có 2 đối số
