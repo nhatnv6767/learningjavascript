@@ -47,19 +47,8 @@ var courses = [
 // Thực hiện việc lưu trữ
 // accumulator: Biến lưu trữ
 
-var i = 0; // kiểm tra xem reduce có gọi lại coinHandler ko
-function coinHandler(accumulator, currentValue, currentIndex, originArray) {
-    i++;
-    var total = accumulator + currentValue.coin;
-    console.table({
-        'Lượt chạy: ': i,
-        'Biến tích trữ: ': accumulator,
-        'Giá khoá học: ': currentValue.coin,
-        'Tích trữ được: ': total
-    })
-
-    console.log(currentValue)
-    return total
+function coinHandler(accumulator, currentValue) {
+    return accumulator + currentValue.coin
 }
 
 // có 2 đối số
