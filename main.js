@@ -50,8 +50,6 @@ var courses = [
 
 
 // có 2 đối số
-var totalCoin = courses.reduce(function (accumulator, currentValue) {
-    return accumulator + currentValue.coin
-}, 0);
+var totalCoin = courses.reduce( (a, b) => a + b.coin , 0);
 
 console.log(totalCoin)
