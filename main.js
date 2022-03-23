@@ -56,7 +56,7 @@ function coinHandler(accumulator, currentValue, currentIndex, originArray) {
     })
 
     console.log(currentValue)
-    return 100;
+    return accumulator + currentValue.coin;
 }
 
 // có 2 đối số
