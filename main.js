@@ -44,11 +44,41 @@ var courses = [
 
 // ví dụ khi ko dùng initialValue
 
-// Flat - "Làm phẳng" mảng từ Depth array - "Mảng sâu"
-var depthArray = [1, 2, [3, 4], 5, 6, [7, 8, 9]];
+// Lấy ra các khoá học đưa vào 1 mảng mới
 
-var flatArray = depthArray.reduce(function (flatOutput, depthItem) {
-    return flatOutput.concat(depthItem)
+var topics = [
+    {
+        topic: "Front-end",
+        courses: [
+            {
+                id: 1, 
+                title: "HTML, CSS"
+            },
+            {
+                id: 2, 
+                title: "Javascript"
+            },
+        ]
+    },
+
+    {
+        topic: "Back-end",
+        courses: [
+            {
+                id: 1, 
+                title: "PHP"
+            },
+            {
+                id: 2, 
+                title: "NodeJS"
+            },
+        ]
+    }
+]
+
+
+var newCourses = topics.reduce(function (courses, topic) {
+    return courses.concat(topic.courses)
 }, [])
 
-console.log(flatArray)
+console.log(newCourses)
