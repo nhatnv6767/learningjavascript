@@ -9,8 +9,9 @@
 
 Array.prototype.map2 = function (callback) {
     var arrayLength = this.length
-    for (var i = 0; i < arrayLength; i++) { 
-        callback(this[i], i)
+    for (var i = 0; i < arrayLength; i++) {
+        var result = callback(this[i], i)
+        console.log('result: ', result)
     }
 }
 
@@ -20,8 +21,8 @@ var courses = [
     'Ruby'
 ];
 
-courses.map2(function(course, index) {
-    console.log(index, course)
+courses.map2(function (course, index) {
+    return `<h2>${course}</h2>`;
 });
 
 
