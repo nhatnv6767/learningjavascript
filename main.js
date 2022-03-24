@@ -7,7 +7,9 @@
 // 2. Được truyền qua đối số
 
 function myFunction(param) {
-    param('Test callback')
+    if (typeof param === 'function') {
+        param('Test callback')
+    }
 }
 
 function myCallback(value) {
