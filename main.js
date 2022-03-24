@@ -5,15 +5,15 @@
 
 // 1. Là hàm
 // 2. Được truyền qua đối số
+// 3. Được gọi lại (trong hàm nhận đối số)
 
-function myFunction(param) {
-    if (typeof param === 'function') {
-        param('Test callback')
-    }
-}
 
-function myCallback(value) {
-    console.log('Value: ', value);
-}
+var courses = [
+    'Javascript',
+    'PHP',
+    'Ruby'
+];
 
-myFunction(myCallback)
+courses.map(function(course){
+    console.log(course);
+})
