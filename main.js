@@ -7,8 +7,11 @@
 // 2. Được truyền qua đối số
 // 3. Được gọi lại (trong hàm nhận đối số)
 
-Array.prototype.map2 = function () {
-    console.log(this)
+Array.prototype.map2 = function (callback) {
+    var arrayLength = this.length
+    for (var i = 0; i < arrayLength; i++) { 
+        callback(this[i], i)
+    }
 }
 
 var courses = [
@@ -17,7 +20,9 @@ var courses = [
     'Ruby'
 ];
 
-courses.map2();
+courses.map2(function(course, index) {
+    console.log(index, course)
+});
 
 
 // var htmls = courses.map(function (course) {
