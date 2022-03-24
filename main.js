@@ -1,9 +1,17 @@
-// Math objects
+// Callback 
 
+// Là hàm (function) được truyền qua đối số 
+// khi gọi hàm khác
 
-var random = Math.floor(Math.random() * 100)
+// 1. Là hàm
+// 2. Được truyền qua đối số
 
-
-if (random < 5) {
-    console.log('Ty le 5%')
+function myFunction(param) {
+    console.log(typeof param)
 }
+
+function myCallback() {
+
+}
+
+myFunction(myCallback)
