@@ -7,11 +7,11 @@
 // 2. Được truyền qua đối số
 
 function myFunction(param) {
-    console.log(typeof param)
+    param('Test callback')
 }
 
-function myCallback() {
-
+function myCallback(value) {
+    console.log('Value: ', value);
 }
 
 myFunction(myCallback)
