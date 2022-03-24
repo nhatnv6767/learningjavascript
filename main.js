@@ -1,6 +1,14 @@
-// includes method
+// Math objects
 
 
-var title = 'Responsive web design';
+var random = Math.floor(Math.random() * 5)
 
-console.log(title.includes('web'))
+var bonus = [
+    '10 coin',
+    '20 coin',
+    '30 coin',
+    '40 coin',
+    '50 coin',
+]
+
+console.log(bonus[random])
