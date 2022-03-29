@@ -1,9 +1,9 @@
-const getNewTodo = async() => {
-    let response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+const getNewTodo = async(id) => {
+    let response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`);
     let data = await response.json();
     return data;
 }
 
-getNewTodo().then(data => {
+getNewTodo(4).then(data => {
     console.log('>>>> check get data: ', data);
 })
