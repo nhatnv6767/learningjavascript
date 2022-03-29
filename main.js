@@ -1,12 +1,3 @@
-const promiseExp = () => {
-    return new Promise((resolve, reject) => {
-        // resolve('get some data')
-        reject('get something wrongs')
-    })
-}
-
-promiseExp().then(data => {
-    console.log(data)
-}).catch(err => {
-    console.log(err)
+fetch('https://jsonplaceholder.typicode.com/todos/1').then(data => {
+    console.log(data.json());
 })
