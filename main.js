@@ -1,5 +1,6 @@
 const getNewTodo = async() => {
-    let data = fetch('https://jsonplaceholder.typicode.com/todos/1');
+    let response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    let data = response.json();
     console.log('>>>> Data: ',data);
 }
 
