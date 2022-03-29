@@ -6,10 +6,8 @@ let state = {
     channel: 'JapanJAV'
 }
 
-console.log('>>> Check data arr1: ',arr1)
+console.log('>>> Check data arr1: ', arr1)
 
-let name = state.name;
-let address = state.address;
-let channel = state.channel;
+let { name, address, channel } = state;
 
-console.log('>>> Check key: ',name, address, channel)
+console.log('>>> Check key: ', name, address, channel)
