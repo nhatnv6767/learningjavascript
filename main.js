@@ -7,7 +7,7 @@ const callback = (error, data) => {
     }
 }
 
-function getTodos(callback) {
+function getTodos(id, callback) {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (this.readyState === 4 && request.status === 200) {
@@ -21,8 +21,9 @@ function getTodos(callback) {
         }
     }
 
-    request.open('GET','https://jsonplaceholder.typicode.com/todos', true);
+    request.open('GET',`https://jsonplaceholder.typicode.com/todos/${id}`, true);
     request.send();
 }
 
-getTodos(callback)
+getTodos(1, callback)
+getTodos(3, callback)
