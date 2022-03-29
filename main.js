@@ -1,20 +1,8 @@
-const getNewTodo = async (id) => {
-    try {
-        let response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`);
-        if (response && response.status !== 200) {
-            throw new Error('Something wrongs with status code: ' + response.status);
-        }
-        let data = await response.json();
-        return data;
-    } catch (e) {
-        console.log(">>> Check catch error: " + e.message)
-    }
-}
+/// ... Destructuring assignment ...
+let arr1 = [1, 2, 3, 4, 5]
 
-getNewTodo(4555)
-    .then(data => {
-        console.log('>>>> check get data: ', data);
-    })
-    .catch(error => {
-        console.log('>>>> error: ', error.message);
-    })
+console.log('>>> Check data arr1: ',arr1)
+
+let arr2 = arr1.push(6)
+
+console.log('>>> Check data arr2: ',arr2)
