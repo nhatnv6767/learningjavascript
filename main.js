@@ -1,10 +1,14 @@
 const getNewTodo = async (id) => {
-    let response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`);
-    if (response && response.status !== 200) {
-        throw new Error('Something wrongs with status code: ' + response.status);
+    try {
+        let response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`);
+        if (response && response.status !== 200) {
+            throw new Error('Something wrongs with status code: ' + response.status);
+        }
+        let data = await response.json();
+        return data;
+    } catch (e) {
+        console.log(">>> Check catch error: " + e.message)
     }
-    let data = await response.json();
-    return data;
 }
 
 getNewTodo(4555)
