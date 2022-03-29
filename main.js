@@ -12,5 +12,5 @@ getNewTodo(4555)
         console.log('>>>> check get data: ', data);
     })
     .catch(error => {
-        console.log('>>>> error: ', error);
+        console.log('>>>> error: ', error.message);
     })
